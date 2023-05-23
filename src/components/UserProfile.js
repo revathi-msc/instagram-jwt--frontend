@@ -11,7 +11,7 @@ export default function UserProfie() {
 
   // to follow user
   const followUser = (userId) => {
-    fetch("http://localhost:5000/follow", {
+    fetch("https://instagram-jwt-backend.onrender.com/follow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
