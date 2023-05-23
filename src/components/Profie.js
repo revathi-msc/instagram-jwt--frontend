@@ -19,7 +19,7 @@ export default function Profie() {
 
 
   useEffect(() => {
-    fetch("http://localhost:5000/myposts", {
+    fetch("https://instagram-jwt-backend.onrender.com/myposts", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
