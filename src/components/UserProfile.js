@@ -30,7 +30,7 @@ export default function UserProfie() {
 
   // to unfollow user
   const unfollowUser = (userId) => {
-    fetch("http://localhost:5000/unfollow", {
+    fetch("https://instagram-jwt-backend.onrender.com/unfollow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function UserProfie() {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${userid}`, {
+    fetch(`https://instagram-jwt-backend.onrender.com/user/${userid}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
