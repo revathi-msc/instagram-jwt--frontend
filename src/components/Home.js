@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   const likePost = (id) => {
-    fetch("http://localhost:5000/like", {
+    fetch("https://instagram-jwt-backend.onrender.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ export default function Home() {
       });
   };
   const unlikePost = (id) => {
-    fetch("http://localhost:5000/unlike", {
+    fetch("https://instagram-jwt-backend.onrender.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -96,7 +96,7 @@ export default function Home() {
 
   // function to make comment
   const makeComment = (text, id) => {
-    fetch("http://localhost:5000/comment", {
+    fetch("https://instagram-jwt-backend.onrender.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
